@@ -67,7 +67,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="288" height="56"/>
+                                    <rect key="frame" x="16" y="72" width="288" height="47"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-4z-NvH">
@@ -76,12 +76,21 @@
                                     <rect key="frame" x="224" y="136" width="80" height="80"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQa-Id-Zqj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="136" width="200" height="21"/>
+                                </variation>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92F-ba-OBN">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="243" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="241" width="288" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter a Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10A-LU-74r">
@@ -89,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="281" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="279" width="288" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOH-mh-gSE">
@@ -99,7 +108,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="186" width="200" height="30"/>
+                                    <rect key="frame" x="16" y="184" width="200" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ooo-MA-FOt"/>
@@ -111,6 +120,7 @@
                             <mask key="subviews">
                                 <exclude reference="Vk9-a2-h3P"/>
                                 <exclude reference="9J8-4z-NvH"/>
+                                <exclude reference="UQa-Id-Zqj"/>
                                 <exclude reference="92F-ba-OBN"/>
                                 <exclude reference="10A-LU-74r"/>
                                 <exclude reference="DOH-mh-gSE"/>
@@ -120,6 +130,7 @@
                             <mask key="subviews">
                                 <include reference="Vk9-a2-h3P"/>
                                 <include reference="9J8-4z-NvH"/>
+                                <include reference="UQa-Id-Zqj"/>
                                 <include reference="92F-ba-OBN"/>
                                 <include reference="10A-LU-74r"/>
                                 <include reference="DOH-mh-gSE"/>
@@ -133,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="92F-ba-OBN" id="6yh-xB-e35"/>
                         <outlet property="mailButton" destination="DOH-mh-gSE" id="P6s-gO-VdM"/>
                         <outlet property="messageLabel" destination="Vk9-a2-h3P" id="z7y-Qt-47G"/>
+                        <outlet property="nameLabel" destination="UQa-Id-Zqj" id="b6L-cL-ce0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
